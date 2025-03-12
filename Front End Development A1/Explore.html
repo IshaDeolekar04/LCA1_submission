@@ -1,63 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <title>flex</title>
-    <link rel="stylesheet" href="Explore.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore</title>
+  <link rel="stylesheet" href="Explore.css">
+  <!-- Font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+  <header>
     <h1>Explore</h1>
-</header>
-<div>
+  </header>
+  <section id="bg-image">
     <nav>
-     <a>Magical Highlights</a> |
-     <a>Did You Know?</a> |
-     <a>Read Our Blog</a> |
-     <a>Share Your Thoughts</a>
-     <hr width="500px" size="2" color="white">
-    </nav>  
-   </div>
-<div class="blog" style=" width: 100%;">
-<section class="blog-img">
-    <h2>Blogs</h2>
-    <img src="assets/Hermione in india.jpg" alt="">
-</section>
-</div>
-<a class="readmore"> Read more ▽</a>
-<div class="table" style="width: 70%;">
-    <h2>House Traits</h2>
-<table>
-    <tr>
+      <a>Magical Highlights</a> |
+      <a>Did You Know?</a> |
+      <a>Read Our Blog</a> |
+      <a>Share Your Thoughts</a>
+      <hr width="580px" size="2" color="white" style="margin: auto; margin-top: 5px;">
+    </nav>
+    <!-- Blogs Section -->
+    <section class="blogs">
+      <h2>Blogs</h2>
+      <div class="blog-container">
+        <div class="blog">
+          <img src="./assets/Hermione in india.jpg" alt="Blog 1">
+          <p>Magic Beyond Borders: Experiencing the Wizarding World in India</p>
+          <small>By Hermione Granger</small>
+        </div>
+        <div class="blog">
+          <img src="./assets/Harry Potter 2.jpg" alt="Blog 2">
+          <p>The Enchanting Charms of Indian Magic</p>
+          <small>By Ron Weasley</small>
+        </div>
+        <div class="blog">
+          <img src="./assets/Troll in the dungeon.jpg" alt="Blog 3">
+          <p>A Muggle’s Guide to Magical India</p>
+          <small>By Harry Potter</small>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- Magical Artifacts Section -->
+  <section class="magical-artifacts">
+    <h2>Magical Artifacts in India</h2>
+    <div class="artifact-container">
+      <article class="artifact">
+        <img src="./assets/Elder wand.jpeg" alt="Elder Wand">
+        <h3>The Elder Wand</h3>
+        <p>Rumors suggest the Elder Wand was once hidden in the Himalayas, guarded by ancient monks who understood its true power.</p>
+      </article>
+      <article class="artifact">
+        <img src="./assets/Philosophers' stone.jpeg" alt="Philosopher's Stone">
+        <h3>The Philosopher's Stone</h3>
+        <p>Legend says a similar stone was created by an Indian alchemist centuries before Nicolas Flamel, hidden deep in Varanasi.</p>
+      </article>
+      <article class="artifact">
+        <img src="./assets/Invisibility Cloak.jpeg" alt="Invisibility Cloak">
+        <h3>The Invisibility Cloak</h3>
+        <p>A sacred temple in Kerala is said to have housed a cloak that granted its wearer complete invisibility.</p>
+      </article>
+    </div>
+  </section>
+  <button class="read-more">Read More</button>
+  <!-- House Traits Table -->
+  <section class="house-traits">
+    <h2>Hogwarts House Traits</h2>
+    <table>
+      <tr>
         <th>House</th>
         <th>Founder</th>
         <th>Traits</th>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Gryffindor</td>
         <td>Godric Gryffindor</td>
-        <td>Bravery, Courage</td>
-    </tr>
-    <tr>
-        <td>Hufflepuff</td>
-        <td>Helga Hufflepuff</td>
-        <td>Loyalty, Kindness</td>
-    </tr>
-    <tr>
+        <td>Bravery, Courage, Chivalry</td>
+      </tr>
+      <tr>
         <td>Ravenclaw</td>
         <td>Rowena Ravenclaw</td>
-        <td>Wisdom, Creativity</td>
-    </tr>
-    <tr>
+        <td>Intelligence, Wisdom, Creativity</td>
+      </tr>
+      <tr>
+        <td>Hufflepuff</td>
+        <td>Helga Hufflepuff</td>
+        <td>Dedication, Hard Work, Fairness</td>
+      </tr>
+      <tr>
         <td>Slytherin</td>
         <td>Salazar Slytherin</td>
-        <td>Ambition, Cunning</td>
-    </tr>
-</table>
-</div>
-<footer>
-    <p>&copy; 2025 Magical Adventures</p>
-</footer>
+        <td>Ambition, Cunning, Resourcefulness</td>
+      </tr>
+    </table>
+  </section>
+  <!-- Myths & Legends Section -->
+  <section class="myths-legends">
+    <h2>Myths & Legends</h2>
+    <div class="legend-content">
+      <article>
+        <h3>The Cursed Scroll of Nalanda</h3>
+        <p>Legend says that a forbidden scroll hidden in the ruins of Nalanda contains spells that could summon celestial beings. Only a true wizard can read its runes.</p>
+      </article>
+      <article>
+        <h3>The Floating City of Kashi</h3>
+        <p>Ancient texts speak of a secret magical city floating above Varanasi, where enlightened sorcerers meet once every millennium to rewrite the fate of humanity.</p>
+      </article>
+      <article>
+        <h3>The Vanishing Temples of Rajasthan</h3>
+        <p>Every century, an invisible temple appears in the Thar Desert for a single night, offering mystical knowledge to those who can find it.</p>
+      </article>
+      <article>
+        <h3>The Phoenix of Kerala</h3>
+        <p>It is said that a mystical phoenix resides in the deep forests of Kerala, granting eternal wisdom to those who witness its rebirth.</p>
+      </article>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Magical India. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>

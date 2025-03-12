@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main{
+    background-color: #471b0a;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: serif;
+    background-color:#1e130a;
+  }
+header {
+    width: 100%;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    background: #1e130a;
+    color: white;
+  }
+img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+.blog-img{
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    transform: translateY(110px);
+    color: white;
+    align-items: center;
+ }
+ .home {
+   font-size: 2rem;
+   font-weight: 700;
+   line-height: 1.5;
+ }
+.blog{
+    text-align: left;
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around; 
+    height:99vh;
+    align-items:left;
+    background: linear-gradient(
+        to bottom,
+        #1e130a 0%,
+        rgba(30, 19, 10, 0.7) 20%,
+        rgba(30, 19, 10, 0.1) 50%,
+        rgba(30, 19, 10, 0.7) 80%,
+        #1e130a 100%
+      ),
+      url("./assets/hogwarts\ seal.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+.blog h2 {
+    transform: translateY(-60px);
+}
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: #1e130a 0px 2px 6px;
+    text-align: left;
+}
+.readmore{
+  background-color: #471b0a00;
+  color: rgba(255, 255, 255, 0.601);
+  cursor: pointer;
+  margin-bottom: 5rem;
+  margin-top: -90px;
+  padding: 1rem;
+  font-size: 20px;
+}
+.readmore:hover{
+  color: white;
+}
+.columns {
+  column-count: 2;
+  column-gap: 40px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin: 10px;
+}
+
+th, td {
+  border: 2px solid gold;
+  padding: 10px;
+  text-align: center;
+}
+
+th, tr {
+  background-color: #ffffff;
+  color: #471b0a;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
